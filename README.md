@@ -2,4 +2,4 @@
 
 Pour les futurs M***** Coders, faites-vous plaisir.
 
-![alt text](https://cdn.intra.42.fr/users/medium_malberty.jp)
+![alt text](https://cdn.intra.42.fr/users/medium_m*******.jpg)
