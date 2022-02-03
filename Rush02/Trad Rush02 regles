@@ -1,0 +1,47 @@
+////////// INSTRUCTIONS \\\\\\\\\\
+
+Vous deves rendre un fichier de type Makefile, qui compilera votre projet en utilisant les regles de $NAME, clean and fclean.
+
+////////// SUJET \\\\\\\\\\
+
+- Creer un programme qui prend un nombre comme argument et le convertit en nombre ecrit en lettre.
+- Le nom de l'executable sera : rush-02
+- Votre code source compilera comme suit :
+	make fclean
+	make
+
+Votre programme peut prendre jusqu'à 2 arguments :
+	◦ S'il n'y a qu'un seul argument, il s'agit de la valeur que vous devez convertir.
+	◦ S'il y a deux arguments, le premier argument est le nouveau dictionnaire de référence et le second argument est la valeur que vous devez convertir.
+
+- Si l'argument n'est pas un entier non signé valide, votre programme doit renvoyer "Error",
+suivi d'un saut de ligne.
+
+- Votre programme doit analyser le dictionnaire donné comme ressource au projet. Les valeurs de
+qu'il contient doivent être utilisées pour imprimer le résultat. Ces valeurs peuvent être modifiées.
+
+- Toute mémoire allouée sur la heap (avec malloc(3)) doit être libérée correctement. Ce
+sera vérifiée lors de l'évaluation.
+
+- LE DICTIONNAIRE AURA LES RÈGLES SUIVANTES :
+	"[a number][0 to n spaces]:[0 to n spaces][any printable characters]"
+
+◦ Les nombres doivent être traités de la même manière qu'atoi.
+◦ Vous couperez les espaces avant et après la valeur dans le dictionnaire.
+◦ Le dictionnaire aura toujours au moins les clés comme dans le dictionnaire de référence.
+Leur valeur peut être modifiée, des entrées supplémentaires peuvent être ajoutées, mais les clés initiales
+ne peuvent pas être supprimées.
+◦ On ne doit utiliser que les entrées initiales (Par exemple, si on ajoute 54 : cinquante-quatre,
+vous devez toujours utiliser 50 : cinquante et 4 : quatre)
+◦ Les entrées du dictionnaire peuvent être stockées dans n'importe quel ordre.
+◦ Il peut y avoir des lignes vides dans le dictionnaire.
+◦ En cas d'erreur lors de l'analyse du dictionnaire, votre programme doit produire le message suivant
+"Dict Error\n"
+◦ Si le dictionnaire ne vous permet pas de résoudre la valeur demandée, votre programme
+doit afficher "Dict Error\n".
+
+- Utiliser - et , et pour être plus proche de la syntaxe écrite correcte.
+- Faire le même exercice dans une autre langue. Pour cela, vous êtes autorisé à fournir un autre dictionnaire qui contiendra les entrées nécessaires.
+- Utiliser 'read' pour lire l'entrée standard lorsqu'il n'y a pas d'argument
+
+
